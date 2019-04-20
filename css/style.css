@@ -574,6 +574,18 @@ h1, h2, h3, h4, h5, h6, figure {
     background: #fafafa;
     content: ''; }
 
+.logo {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 250px;
+    width: 100%;
+    display: table;
+    overflow: hidden;
+    background-color: white;
+}
+
 .project {
   background-size: cover;
   background-position: center center;
@@ -594,10 +606,12 @@ h1, h2, h3, h4, h5, h6, figure {
       height: 500px; }
   .project .desc {
     background: #fff;
-    padding: 2em; }
+    padding: 2em; 
+    opacity: 0.7;}
     .project .desc p {
       margin-bottom: 0;
-      color: gray; }
+      color: black;
+      font-weight: 500; }
     .project .desc h3 {
       text-transform: uppercase;
       font-size: 20px;
