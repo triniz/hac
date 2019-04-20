@@ -18,6 +18,11 @@ body {
   color: gray;
   background: #fff; }
 
+/*in your css hide the field so real users cant fill it in*/
+.antispam {
+    display: none;
+}
+
 #page {
   position: relative;
   overflow-x: hidden;
