@@ -180,9 +180,30 @@
 				</div>
 			</div>
 		</div>
-		<!-- <div id="map" class="colorlib-map"> -->
-			
-		</div>
+		<div id="map" class="colorlib-map"></div>
+		<script type="text/javascript">
+			function initMap() {
+				var myLatlng = new google.maps.LatLng(36.857318,10.189514);
+				var mapOptions = {
+				  zoom: 18,
+				  disableDefaultUI: true,
+				  center: myLatlng
+				}
+				var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+				var image = "https://img.icons8.com/color/48/000000/pin3.png";
+
+				var marker = new google.maps.Marker({
+				    position: myLatlng,
+				    icon: image
+				});
+
+				// To add the marker to the map, call setMap();
+				marker.setMap(map);
+			};	
+
+							
+		</script>
 		
 		<footer id="colorlib-footer" role="contentinfo">
 			<div class="container">
@@ -264,6 +285,7 @@
 	<script src="js/jquery.countTo.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSKFUtecIdzLbMZCIL4jsB2a7P45w2Nb4&callback=initMap"></script>
 
 	</body>
 </html>
